@@ -17,7 +17,7 @@ import numpy as np
 
 # Hyperparameters
 
-N = 4
+N = 5
 S = 3
 lr= 1e-5
 epochs = 10
