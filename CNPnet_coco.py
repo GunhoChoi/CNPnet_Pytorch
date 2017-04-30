@@ -32,11 +32,11 @@ mapping_channel = 16
 
 img_dir ="./images/"
 img_data = dset.ImageFolder(root=img_dir, transform = transforms.Compose([
-											transforms.Scale(size=320),
-											transforms.RandomHorizontalFlip(),
-											transforms.RandomCrop(size=(240,320)),
-											transforms.ToTensor(),
-											]))
+				transforms.Scale(size=320),
+				transforms.RandomHorizontalFlip(),
+				transforms.RandomCrop(size=(240,320)),
+				transforms.ToTensor(),
+				]))
 img_batch = data.DataLoader(img_data, batch_size=batch_size,
                             shuffle=True, num_workers=2)
 
